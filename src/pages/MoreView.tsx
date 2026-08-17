@@ -16,7 +16,7 @@ export default function MoreView({ profile, onBack, onLogout }: MoreViewProps) {
   const [deleteOpen, setDeleteOpen] = useState(false)
 
   return (
-    <AppShell>
+    <AppShell className="page-scroll">
       <section className="more-layout mx-auto h-full w-full">
         <BackButton onClick={onBack} />
         <h1 className="more-title font-normal tracking-[-0.025em]">More</h1>

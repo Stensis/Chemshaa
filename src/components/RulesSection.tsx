@@ -1,7 +1,7 @@
 export default function RulesSection() {
   return (
     <section className="lobby-rules mx-auto w-full text-black">
-      <h2 className="rules-heading text-center font-semibold italic">
+      <h2 className="rules-heading text-center font-bold italic">
         Live Trivia Show Rules:
       </h2>
 
