@@ -661,16 +661,13 @@ input {
     background: #ffda29;
   }
 
-  /* =========================
-     HEADER
-     ========================= */
-
+  /* HEADER */
   .lobby-header {
-    height: 96px;
-    min-height: 96px;
-    flex: 0 0 96px;
+    height: 90px;
+    min-height: 90px;
+    flex: 0 0 90px;
 
-    padding-top: 26px;
+    padding-top: 24px;
   }
 
   .lobby-logo {
@@ -678,25 +675,18 @@ input {
   }
 
   .lobby-menu {
-    top: 25px;
+    top: 23px;
     right: 18px;
   }
 
-  /* =========================
-     MAIN CONTENT
-     ========================= */
-
+  /* MAIN CONTENT */
   .lobby-main-content {
     width: 100%;
     min-height: 0;
-
     flex: 0 0 auto;
   }
 
-  /* =========================
-     TITLE
-     ========================= */
-
+  /* TITLE */
   .lobby-intro {
     width: 100%;
     max-width: 390px;
@@ -717,15 +707,12 @@ input {
     letter-spacing: -0.02em;
   }
 
-  /* =========================
-     RULES
-     ========================= */
-
+  /* RULES */
   .lobby-rules {
     width: 100%;
     max-width: 390px;
 
-    margin: 42px auto 0;
+    margin: 36px auto 0;
 
     padding-inline: 20px;
   }
@@ -771,30 +758,24 @@ input {
     text-align: center;
   }
 
-  /* =========================
-     GAP BEFORE TIMER
-     ========================= */
-
+  /* GAP ABOVE TIMER */
   .lobby-bottom-space {
     width: 100%;
 
-    height: 47px;
-    min-height: 47px;
+    height: 28px;
+    min-height: 28px;
 
-    flex: 0 0 47px;
+    flex: 0 0 28px;
   }
 
-  /* =========================
-     COUNTDOWN
-     ========================= */
-
+  /* COUNTDOWN */
   .countdown-bar {
     width: 100%;
 
-    height: 70px;
-    min-height: 70px;
+    height: 66px;
+    min-height: 66px;
 
-    flex: 0 0 70px;
+    flex: 0 0 66px;
 
     margin: 0;
   }
@@ -804,31 +785,28 @@ input {
 
     color: #fff;
 
-    font-size: 11px;
+    font-size: 10.5px;
     font-weight: 400;
     line-height: 1;
   }
 
   .countdown-time {
-    margin-top: 7px;
+    margin-top: 4px;
 
     color: #fff;
 
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 400;
     line-height: 1;
 
     letter-spacing: 0.02em;
   }
 
-  /* =========================
-     YELLOW BELOW TIMER
-     ========================= */
-
+  /* YELLOW BELOW TIMER */
   .lobby-after-countdown {
     width: 100%;
 
-    min-height: 0;
+    min-height: 55px;
 
     flex: 1 1 auto;
 
