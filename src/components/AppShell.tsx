@@ -1,22 +1,19 @@
-import type { ReactNode } from 'react'
+import type { ReactNode } from "react";
 
 interface AppShellProps {
-  children: ReactNode
-  className?: string
+  children: ReactNode;
+  className?: string;
 }
 
-export default function AppShell({
-  children,
-  className = '',
-}: AppShellProps) {
+export default function AppShell({ children, className = "" }: AppShellProps) {
   return (
     <main
       className={`
         relative
-        h-screen
-        h-dvh
+        min-h-screen
+        min-h-dvh
         w-full
-        overflow-hidden
+        overflow-x-hidden
         bg-[#ffda29]
         text-black
         ${className}
@@ -24,5 +21,5 @@ export default function AppShell({
     >
       {children}
     </main>
-  )
+  );
 }
