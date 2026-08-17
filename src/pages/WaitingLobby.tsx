@@ -31,7 +31,6 @@ export default function WaitingLobby({ onOpenMenu }: WaitingLobbyProps) {
         remaining={remaining}
       />
 
-      {/* yellow area BELOW countdown */}
       <div className="lobby-after-countdown" />
     </main>
   );

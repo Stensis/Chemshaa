@@ -1,17 +1,12 @@
-import { SHOW_TIME } from '../constants/lobby'
+import { SHOW_TIME } from "../constants/lobby";
 
 export default function LobbyIntro() {
-  const now = new Date()
+  const now = new Date();
 
-  const todayShowTime = new Date()
-  todayShowTime.setHours(
-    SHOW_TIME.hour,
-    SHOW_TIME.minute,
-    0,
-    0
-  )
+  const todayShowTime = new Date();
+  todayShowTime.setHours(SHOW_TIME.hour, SHOW_TIME.minute, 0, 0);
 
-  const isToday = now < todayShowTime
+  const isToday = now < todayShowTime;
 
   return (
     <section className="lobby-intro mx-auto w-full text-center">
@@ -30,10 +25,10 @@ export default function LobbyIntro() {
             <br />
             trivia show kicks off at
             <br />
-            2:00 PM
+            at 2:00 PM
           </>
         )}
       </h1>
     </section>
-  )
+  );
 }

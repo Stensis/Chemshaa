@@ -628,12 +628,20 @@ input {
   }
 }
 
+/* =========================================================
+   FINAL MOBILE LOBBY ALIGNMENT
+   Match Android reference proportions
+   ========================================================= */
+
 @media (max-width: 599px) {
   html,
   body,
   #root {
+    width: 100%;
     height: 100%;
+    margin: 0;
     overflow: hidden;
+    background: #ffda29;
   }
 
   body {
@@ -641,16 +649,28 @@ input {
   }
 
   .lobby-screen {
+    width: 100%;
     height: 100dvh;
     min-height: 100dvh;
     max-height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+
     overflow: hidden;
+    background: #ffda29;
   }
 
+  /* =========================
+     HEADER
+     ========================= */
+
   .lobby-header {
-    height: 105px;
-    flex: 0 0 105px;
-    padding-top: 38px;
+    height: 96px;
+    min-height: 96px;
+    flex: 0 0 96px;
+
+    padding-top: 26px;
   }
 
   .lobby-logo {
@@ -658,30 +678,84 @@ input {
   }
 
   .lobby-menu {
-    top: 34px;
+    top: 25px;
     right: 18px;
   }
 
-  .lobby-title {
-    max-width: 330px;
-    font-size: 21px;
-    line-height: 1.27;
+  /* =========================
+     MAIN CONTENT
+     ========================= */
+
+  .lobby-main-content {
+    width: 100%;
+    min-height: 0;
+
+    flex: 0 0 auto;
   }
 
+  /* =========================
+     TITLE
+     ========================= */
+
+  .lobby-intro {
+    width: 100%;
+    max-width: 390px;
+
+    margin: 0 auto;
+    padding-inline: 20px;
+  }
+
+  .lobby-title {
+    max-width: 340px;
+
+    margin: 0 auto;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.28;
+
+    letter-spacing: -0.02em;
+  }
+
+  /* =========================
+     RULES
+     ========================= */
+
   .lobby-rules {
-    margin-top: 40px;
+    width: 100%;
+    max-width: 390px;
+
+    margin: 42px auto 0;
+
     padding-inline: 20px;
   }
 
   .rules-heading {
+    margin: 0;
+
     font-size: 14px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    text-align: center;
   }
 
   .rules-copy {
-    margin-top: 15px;
-    gap: 11px;
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
     font-size: 12.5px;
-    line-height: 1.39;
+    line-height: 1.4;
+
+    letter-spacing: 0;
+  }
+
+  .rules-copy p {
+    margin: 0;
   }
 
   .rules-eliminated {
@@ -689,37 +763,76 @@ input {
   }
 
   .rules-feedback {
-    margin-top: 14px;
+    margin-top: 15px;
+
     font-size: 11px;
+    line-height: 1.3;
+
+    text-align: center;
   }
 
-  /* SPACE BETWEEN FEEDBACK AND TIMER */
+  /* =========================
+     GAP BEFORE TIMER
+     ========================= */
+
   .lobby-bottom-space {
-    height: 32px;
-    min-height: 32px;
-    flex: 0 0 32px;
+    width: 100%;
+
+    height: 47px;
+    min-height: 47px;
+
+    flex: 0 0 47px;
   }
+
+  /* =========================
+     COUNTDOWN
+     ========================= */
 
   .countdown-bar {
-    height: 69px;
-    min-height: 69px;
-    flex: 0 0 69px;
+    width: 100%;
+
+    height: 70px;
+    min-height: 70px;
+
+    flex: 0 0 70px;
+
+    margin: 0;
   }
 
   .countdown-label {
+    margin: 0;
+
+    color: #fff;
+
     font-size: 11px;
+    font-weight: 400;
+    line-height: 1;
   }
 
   .countdown-time {
-    margin-top: 5px;
-    font-size: 20px;
-    color: white;
+    margin-top: 7px;
+
+    color: #fff;
+
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1;
+
+    letter-spacing: 0.02em;
   }
 
-  /* THIS is the yellow area beneath the timer */
+  /* =========================
+     YELLOW BELOW TIMER
+     ========================= */
+
   .lobby-after-countdown {
-    min-height: 70px;
+    width: 100%;
+
+    min-height: 0;
+
     flex: 1 1 auto;
+
+    background: #ffda29;
   }
 }
 
