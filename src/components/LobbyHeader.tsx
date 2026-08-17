@@ -7,10 +7,13 @@ interface LobbyHeaderProps {
 
 export default function LobbyHeader({ onMenuClick }: LobbyHeaderProps) {
   return (
-    <header className="lobby-header relative flex shrink-0 items-start justify-center">
-      <BrandLogo className="lobby-logo" />
-      <div className="lobby-menu absolute">
-        <MenuButton onClick={onMenuClick} />
+    <header className="lobby-header">
+      <div className="lobby-header-row">
+        <BrandLogo className="lobby-logo" />
+
+        <div className="lobby-menu">
+          <MenuButton onClick={onMenuClick} />
+        </div>
       </div>
     </header>
   )
